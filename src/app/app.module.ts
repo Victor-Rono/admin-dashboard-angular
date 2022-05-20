@@ -1,3 +1,5 @@
+import { FooterComponent } from './core/components/footer/footer.component';
+import { NavComponent } from './core/components/nav/nav.component';
 import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,10 +13,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
+    NavComponent,
     AppComponent,
     HomeComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
