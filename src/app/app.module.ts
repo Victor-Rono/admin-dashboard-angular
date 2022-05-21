@@ -11,6 +11,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Angular Material
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     NavComponent,
@@ -22,7 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, CoreModule, BrowserAnimationsModule
+    AppRoutingModule, CoreModule, BrowserAnimationsModule, MatIconModule, MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

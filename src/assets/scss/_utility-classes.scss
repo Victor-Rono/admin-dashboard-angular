@@ -1,8 +1,25 @@
-.circle {
+.u-circle {
   border-radius: 50%;
   aspect-ratio: 1;
 }
 
-.profile-photo-sm {
+.u-profile-photo-sm {
   width: 2.5rem;
+}
+
+.u-m0-p0 {
+  margin: 0;
+  padding: 0;
+}
+
+.u-card-padding {
+  padding: 1.6rem;
+}
+
+.u-card-border-radius {
+  border-radius: 1.6rem;
+}
+
+.u-padding-1 {
+  padding: 1rem;
 }
