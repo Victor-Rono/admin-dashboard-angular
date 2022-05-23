@@ -1,27 +1,32 @@
-<nav>
+<!--===== Start top navbar =====-->
+<nav class="top-nav">
   <div class="container">
     <img class="brand-image u-circle  u-profile-photo-sm"
       src="https://static.vecteezy.com/system/resources/previews/000/604/869/non_2x/vector-fire-logo-hot-logo-and-symbols-template-icons.jpg"
       alt="" />
 
     <div class="search-bar">
-      <mat-icon>search</mat-icon>
-      <input type="search" name="" id="">
-      <!-- <button mat-flat-button>Search</button> -->
+
+      <input type="search" name="" id="" placeholder="Search...">
+      <button color="primary" mat-flat-button>
+        <mat-icon>search</mat-icon>
+      </button>
 
     </div>
 
     <div class="profile-area">
       <div class="theme-btn">
-        <mat-icon>light_mode</mat-icon>
+        <mat-icon class="selected">light_mode</mat-icon>
         <mat-icon>dark_mode</mat-icon>
       </div>
 
       <div class="profile-photo">
-        <div class="image-container">
+        <div class="img-container">
           <img
             src="https://media.istockphoto.com/vectors/unknown-person-silhouette-whith-tie-vector-id521573881?k=20&m=521573881&s=612x612&w=0&h=aN-SJp9juUxAF4kpfJinHHLTYveU-qhzL3w7pcw-5KU="
             alt="profile picture" class="u-profile-photo-sm u-circle" />
+        </div>
+        <div class="profile-info">
           <p class="u-m0-p0">Victor Rono</p>
           <mat-icon>expand_more</mat-icon>
         </div>
@@ -30,3 +35,85 @@
     </div>
   </div>
 </nav>
+<!--===== End top navbar =====-->
+
+
+<!--===== Start Main =====-->
+<main>
+
+  <!-- Start Sidenav -->
+  <aside>
+    <button mat-button class="close-btn">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+
+      <div class="sidebar-link">
+        <a routerLink="">
+          <mat-icon>home</mat-icon>
+          Home
+        </a>
+      </div>
+
+      <div class="sidebar-links-container">
+        <div class="sidebar-link">
+          <a routerLink="" routerLinkActive="active">
+            <mat-icon>dashboard</mat-icon>
+            Dashboard
+          </a>
+        </div>
+
+        <div class="sidebar-link">
+          <a routerLink="">
+            <mat-icon>person</mat-icon>
+            Users
+          </a>
+        </div>
+
+        <div class="sidebar-link">
+          <a routerLink="">
+            <mat-icon>wallet</mat-icon>
+            Documents
+          </a>
+        </div>
+
+        <div class="sidebar-link">
+          <a routerLink="">
+            <mat-icon>done_all</mat-icon>
+            Completed
+          </a>
+        </div>
+
+        <div class="sidebar-link">
+          <a routerLink="">
+            <mat-icon>messages</mat-icon>
+            Messages
+          </a>
+        </div>
+
+        <div class="sidebar-link">
+          <a routerLink="">
+            <mat-icon>data_exploration</mat-icon>
+            Analytics
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </aside>
+  <!-- End Sidenav -->
+
+
+
+  <section class="middle">
+    <router-outlet></router-outlet>
+  </section>
+
+  <section class="right">
+
+  </section>
+</main>
+<!--===== End Main =====-->

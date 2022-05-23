@@ -5,6 +5,7 @@
 
 .u-profile-photo-sm {
   width: 2.5rem;
+  overflow: hidden;
 }
 
 .u-m0-p0 {
@@ -22,4 +23,90 @@
 
 .u-padding-1 {
   padding: 1rem;
+}
+
+.u-shadow-light {
+  box-shadow: 0 0.8rem 0.8rem var(--primary-light);
+}
+
+//Text
+.u-text-black {
+  color: black;
+}
+
+.u-text-white {
+  color: white;
+}
+
+.u-text-primary {
+  color: var(--primary);
+}
+
+.u-text-muted {
+  color: var(--light-gray);
+}
+
+.u-text-danger {
+  color: var(--danger);
+}
+
+.u-text-success {
+  color: var(--success);
+}
+
+.u-text-purple {
+  color: var(--purple);
+}
+
+.u-text-warning {
+  color: var(--warning);
+}
+
+.u-text-dark {
+  color: var(--dark);
+}
+
+.u-text-bisque {
+  color: var(--bisque);
+}
+
+//Background
+.u-bg-black {
+  background-color: black;
+}
+
+.u-bg-white {
+  background-color: white;
+}
+
+.u-bg-primary {
+  background-color: var(--primary);
+}
+
+.u-bg-muted {
+  background-color: var(--light-gray);
+}
+
+.u-bg-danger {
+  background-color: var(--danger);
+}
+
+.u-bg-success {
+  background-color: var(--success);
+}
+
+.u-bg-purple {
+  background-color: var(--purple);
+}
+
+.u-bg-warning {
+  background-color: var(--warning);
+}
+
+.u-bg-dark {
+  background-color: var(--dark);
+}
+
+.u-bg-bisque {
+  background-color: var(--bisque);
 }
